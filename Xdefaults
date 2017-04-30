@@ -1,0 +1,78 @@
+!------------------------------------------------------------------------------
+! c o l o r -  s e t t i n g s
+
+URxvt*foreground: #FFFFFF
+URxvt*depth: 32
+URxvt*background: [50]#000000
+
+! Default
+! 0: black
+URxvt*color0:  #000000
+URxvt*color8:  #000000
+! 1: red
+URxvt*color1:  #f40404
+URxvt*color9:  #f40404
+! 2: green
+URxvt*color2:  #04f434
+URxvt*color10: #04f434
+! 3: yellow
+URxvt*color3:  #f6ff00
+URxvt*color11: #f6ff00
+! 4: blue
+URxvt*color4:  #1f6dd1
+URxvt*color12: #1f6dd1
+! 5: magenta
+URxvt*color5:  #8c2368
+URxvt*color13: #8c2368
+! 6: cyan
+URxvt*color6:  #00ffe8
+URxvt*color14: #00ffe8
+! 7: white
+URxvt*color7:  #ffffff
+URxvt*color15: #ffffff
+
+!------------------------------------------------------------------------------
+! u r x v t
+
+URxvt*transparent: true
+URxvt*shading: 30
+!URxvt*geometry:         112x22  
+!URxvt*font:            xft:Arial:size=10
+URxvt*urlLauncher:         opera-developer  
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:        true
+URxvt*scrollColor:        #000000
+URxvt.font: xft: monospace:pixelsize=12
+URxvt.letterSpace: 1
+
+Xft.autohint:      false
+Xft.antialias:     true
+Xft.rgba:          none
+Xft.hinting:       true
+Xft.hintstyle:     hintslight
+Xft.lcdfilter:     lcddefault
+Xft.dpi:           89
+
+URxvt*iconFile: 10.png
+
+!URxvt*scrollBar_right: true
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+
+URxvt*scrollTtyKeypress: true
+URxvt*jumpScroll: true
+URxvt*skipScroll: true
+
+URxvt*borderLess:false
+URxvt*borderColor: #E77320
+URxvt*geometry: 147x39+100+207
+
+URxvt*perl-ext-common: default,matcher,font-size,clipboard
+URxvt*perl-lib: /usr/lib/urxvt/perl/
+
+
+URxvt.keysym.C-c:         perl:clipboard:copy
+URxvt.keysym.C-v:         perl:clipboard:paste
+URxvt.keysym.C-M-v:       perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
